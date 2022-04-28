@@ -32,6 +32,11 @@ function verifyPass() {
   } else {
     showText(16);
   }
+
+  if (pass == 5) {
+    showText(17);
+  }
+
   passCheck = pass;
 
   document.querySelector("#b-" + (pass + 1)).style.background = "#54f254";
@@ -214,6 +219,11 @@ function showText(n) {
 
   if (n == 16) {
     text = "Wrong or need to answer another question first.";
+  }
+
+  if (n == 17) {
+    text =
+      "Congratulations!!!\nThanks for playing! Enjoy your time here in Portugal!";
   }
 
   document.querySelector(".modal").style.display = "flex";
