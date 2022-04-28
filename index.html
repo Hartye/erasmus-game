@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>BWWFC</title>
+  </head>
+  <body>
+    <main>
+      <div class="canvas">
+        <div class="one">
+          <img src="./images/colosseum.png" onclick="showText(1)" />
+          <img src="./images/rome.jpeg" onclick="showText(2)" />
+        </div>
+        <div class="two">
+          <img src="./images/school.png" onclick="showText(3)" />
+          <img src="./images/student.png" onclick="showText(4)" />
+        </div>
+        <div class="three">
+          <img src="./images/pizza_one.png" onclick="showText(5)" />
+          <img src="./images/pizza_two.png" onclick="showText(6)" />
+          <img src="./images/bread.png" onclick="showText(7)" />
+          <img src="./images/football.png" onclick="showText(8)" />
+        </div>
+      </div>
+      <div class="buttons">
+        <button onclick="moveTo(1)">1</button>
+        <button onclick="moveTo(2)">2</button>
+        <button onclick="moveTo(3)">3</button>
+      </div>
+      <div class="modal">
+        <textarea class="textarea" cols="30" rows="10"></textarea>
+        <div class="modal-buttons">
+          <button onclick="modalClose()">Close</button>
+        </div>
+      </div>
+      <div class="pass">
+        <textarea class="pass-textarea" cols="30" rows="10"></textarea>
+        <div class="pass-buttons">
+          <button onclick="verifyPass()">Enter</button>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
