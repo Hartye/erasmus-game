@@ -10,6 +10,22 @@ function verifyPass() {
     pass = 2;
   }
 
+  if (value == 300) {
+    pass = 3;
+  }
+
+  if (value == 10) {
+    pass = 4;
+  }
+
+  if (value == 1709) {
+    pass = 5;
+  }
+
+  if (value == 17) {
+    pass = 6;
+  }
+
   document.querySelector(".pass-textarea").value = "";
 
   document.querySelector(".pass").style.display = "none";
@@ -27,6 +43,22 @@ function putPass(n) {
     text = "Hours students normally have classes (ex. 2; 4; 9; etc..)";
   }
 
+  if (n == 3) {
+    text = "How many types of bread is there in Italy";
+  }
+
+  if (n == 4) {
+    text = "the grades goes from 0 to";
+  }
+
+  if (n == 5) {
+    text = "When was the first piano invented";
+  }
+
+  if (n == 6) {
+    text = "How many years it took to build the world longest tunnel";
+  }
+
   document.querySelector(".pass-textarea").placeholder = text;
 }
 
@@ -34,23 +66,65 @@ function moveTo(n) {
   if (n == 1) {
     document.querySelector(".two").style.display = "none";
     document.querySelector(".three").style.display = "none";
+    document.querySelector(".four").style.display = "none";
+    document.querySelector(".five").style.display = "none";
+    document.querySelector(".six").style.display = "none";
     document.querySelector(".one").style.display = "block";
   }
 
   if (n == 2 && pass >= 1) {
     document.querySelector(".three").style.display = "none";
     document.querySelector(".one").style.display = "none";
+    document.querySelector(".four").style.display = "none";
+    document.querySelector(".five").style.display = "none";
+    document.querySelector(".six").style.display = "none";
     document.querySelector(".two").style.display = "block";
   } else if (n == 2) {
     putPass(1);
   }
 
-  if (n == 3 && pass == 2) {
+  if (n == 3 && pass >= 2) {
     document.querySelector(".two").style.display = "none";
     document.querySelector(".one").style.display = "none";
+    document.querySelector(".four").style.display = "none";
+    document.querySelector(".five").style.display = "none";
+    document.querySelector(".six").style.display = "none";
     document.querySelector(".three").style.display = "block";
   } else if (n == 3) {
     putPass(2);
+  }
+
+  if (n == 4 && pass >= 3) {
+    document.querySelector(".two").style.display = "none";
+    document.querySelector(".one").style.display = "none";
+    document.querySelector(".five").style.display = "none";
+    document.querySelector(".six").style.display = "none";
+    document.querySelector(".three").style.display = "none";
+    document.querySelector(".four").style.display = "block";
+  } else if (n == 4) {
+    putPass(3);
+  }
+
+  if (n == 5 && pass >= 4) {
+    document.querySelector(".two").style.display = "none";
+    document.querySelector(".one").style.display = "none";
+    document.querySelector(".four").style.display = "none";
+    document.querySelector(".six").style.display = "none";
+    document.querySelector(".three").style.display = "none";
+    document.querySelector(".five").style.display = "block";
+  } else if (n == 5) {
+    putPass(4);
+  }
+
+  if (n == 6 && pass >= 5) {
+    document.querySelector(".two").style.display = "none";
+    document.querySelector(".one").style.display = "none";
+    document.querySelector(".four").style.display = "none";
+    document.querySelector(".five").style.display = "none";
+    document.querySelector(".three").style.display = "none";
+    document.querySelector(".six").style.display = "block";
+  } else if (n == 6) {
+    putPass(5);
   }
 }
 
@@ -91,6 +165,32 @@ function showText(n) {
 
   if (n == 8) {
     text = "The most famous sport is football";
+  }
+
+  if (n == 9) {
+    text = "In Italy saturday is a normal day of work and school";
+  }
+
+  if (n == 10) {
+    text = "The grades in Italy goes from 0 to 10";
+  }
+
+  if (n == 11) {
+    text =
+      "The first true piano was invented by an Italian man named Bartolomeo Cristofori in 1709";
+  }
+
+  if (n == 12) {
+    text = "The most famous song type in Italy is national pop";
+  }
+
+  if (n == 13) {
+    text =
+      "The World’s longest tunnel 'Gotthard Base Tunnel' runs from Switzerland to Italy. It took 17 years to build and is 57 km long";
+  }
+
+  if (n == 14) {
+    text = "34% of all the Italians have never used Internet";
   }
 
   document.querySelector(".modal").style.display = "flex";

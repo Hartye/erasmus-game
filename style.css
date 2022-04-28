@@ -85,6 +85,54 @@ div.canvas div.three img:nth-child(4) {
   margin-top: -3rem;
 }
 
+div.four {
+  display: none;
+}
+
+div.canvas div.four img:nth-child(1) {
+  width: 200px;
+  transform: rotate(90deg);
+  margin: 3rem 0;
+}
+
+div.canvas div.four img:nth-child(2) {
+  width: 200px;
+  transform: rotate(45deg);
+  margin: 3rem 2rem;
+}
+
+div.five {
+  display: none;
+}
+
+div.canvas div.five img:nth-child(1) {
+  width: 200px;
+  transform: rotate(90deg);
+  margin: 3rem 0;
+}
+
+div.canvas div.five img:nth-child(2) {
+  width: 120px;
+  transform: rotate(105deg);
+  margin: 3rem 5rem;
+}
+
+div.six {
+  display: none;
+}
+
+div.canvas div.six img:nth-child(1) {
+  width: 200px;
+  transform: rotate(90deg);
+  margin: 3rem 0;
+}
+
+div.canvas div.six img:nth-child(2) {
+  width: 100px;
+  transform: rotate(45deg);
+  margin: 3rem 5rem;
+}
+
 div.modal {
   position: absolute;
   top: 0;
