@@ -5,22 +5,27 @@ function verifyPass() {
   let value = document.querySelector(".pass-textarea").value;
   if (value == "rome" || value == "Rome") {
     pass = 1;
+    moveTo(2);
   }
 
   if (value == 8 && pass == 1) {
     pass = 2;
+    moveTo(3);
   }
 
   if (value == 300 && pass == 2) {
     pass = 3;
+    moveTo(4);
   }
 
   if (value == 10 && pass == 3) {
     pass = 4;
+    moveTo(5);
   }
 
   if (value == 1709 && pass == 4) {
     pass = 5;
+    moveTo(6);
   }
 
   if (value == 17 && pass == 5) {
