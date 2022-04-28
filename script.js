@@ -1,4 +1,5 @@
 let pass = 0;
+let passCheck = pass;
 
 function verifyPass() {
   let value = document.querySelector(".pass-textarea").value;
@@ -6,31 +7,32 @@ function verifyPass() {
     pass = 1;
   }
 
-  if (value == 8) {
+  if (value == 8 && pass == 1) {
     pass = 2;
   }
 
-  if (value == 300) {
+  if (value == 300 && pass == 2) {
     pass = 3;
   }
 
-  if (value == 10) {
+  if (value == 10 && pass == 3) {
     pass = 4;
   }
 
-  if (value == 1709) {
+  if (value == 1709 && pass == 4) {
     pass = 5;
   }
 
-  if (value == 17) {
+  if (value == 17 && pass == 5) {
     pass = 6;
   }
 
-  if (pass != 0) {
+  if (pass != passCheck) {
     showText(15);
   } else {
     showText(16);
   }
+  passCheck = pass;
 
   document.querySelector("#b-" + (pass + 1)).style.background = "#54f254";
 
@@ -211,7 +213,7 @@ function showText(n) {
   }
 
   if (n == 16) {
-    text = "Wrong!!";
+    text = "Wrong or need to answer another question first.";
   }
 
   document.querySelector(".modal").style.display = "flex";
