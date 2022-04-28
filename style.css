@@ -14,7 +14,12 @@ main {
 }
 
 .buttons button {
+  background: rgb(240, 105, 105);
   transform: rotate(90deg);
+}
+
+#b-1 {
+  background: #54f254;
 }
 
 div.canvas {

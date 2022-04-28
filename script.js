@@ -32,6 +32,8 @@ function verifyPass() {
     showText(16);
   }
 
+  document.querySelector("#b-" + (pass + 1)).style.background = "#54f254";
+
   document.querySelector(".pass-textarea").value = "";
 
   document.querySelector(".pass").style.display = "none";
