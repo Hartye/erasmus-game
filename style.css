@@ -1,0 +1,200 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+}
+
+.buttons button {
+  transform: rotate(90deg);
+}
+
+div.canvas {
+  border: 5px black solid;
+  background-image: url(./images/download.png);
+  width: 300px;
+  height: 500px;
+}
+
+div.one {
+  display: block;
+}
+
+div.canvas div.one img:nth-child(1) {
+  width: 200px;
+  transform: rotate(90deg);
+  margin: 3rem 0;
+}
+
+div.canvas div.one img:nth-child(2) {
+  width: 200px;
+  transform: rotate(45deg);
+  margin: 3rem 2rem;
+}
+
+div.two {
+  display: none;
+}
+
+div.canvas div.two img:nth-child(1) {
+  width: 200px;
+  transform: rotate(90deg);
+  margin: 3rem 0;
+}
+
+div.canvas div.two img:nth-child(2) {
+  width: 150px;
+  transform: rotate(105deg);
+  margin: 3rem 5rem;
+}
+
+div.three {
+  display: none;
+}
+
+div.canvas div.three img:nth-child(1) {
+  width: 150px;
+  transform: rotate(105deg);
+  margin: 1rem;
+}
+
+div.canvas div.three img:nth-child(2) {
+  width: 60px;
+  transform: rotate(105deg);
+  margin: 3rem 15rem;
+}
+
+div.canvas div.three img:nth-child(3) {
+  width: 100px;
+  transform: rotate(105deg);
+  margin: 2rem;
+  margin-top: -15rem;
+}
+
+div.canvas div.three img:nth-child(4) {
+  width: 150px;
+  transform: rotate(105deg);
+  margin: 0 7rem;
+  margin-top: -3rem;
+}
+
+div.four {
+  display: none;
+}
+
+div.canvas div.four img:nth-child(1) {
+  width: 200px;
+  transform: rotate(90deg);
+  margin: 3rem 0;
+}
+
+div.canvas div.four img:nth-child(2) {
+  width: 200px;
+  transform: rotate(45deg);
+  margin: 3rem 2rem;
+}
+
+div.five {
+  display: none;
+}
+
+div.canvas div.five img:nth-child(1) {
+  width: 200px;
+  transform: rotate(90deg);
+  margin: 3rem 0;
+}
+
+div.canvas div.five img:nth-child(2) {
+  width: 120px;
+  transform: rotate(105deg);
+  margin: 3rem 5rem;
+}
+
+div.six {
+  display: none;
+}
+
+div.canvas div.six img:nth-child(1) {
+  width: 200px;
+  transform: rotate(90deg);
+  margin: 3rem 0;
+}
+
+div.canvas div.six img:nth-child(2) {
+  width: 100px;
+  transform: rotate(45deg);
+  margin: 3rem 5rem;
+}
+
+div.modal {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: rotate(90deg);
+  margin: 10rem 0;
+}
+
+div.modal div.modal-buttons {
+  display: flex;
+}
+
+div.modal div.modal-buttons button {
+  padding: 1rem;
+  margin: .5rem;
+  border: none;
+  border-radius: .2rem;
+  background: rgb(89, 226, 89);
+}
+
+textarea {
+  width: 300px;
+  height: 200px;
+  pointer-events: none;
+  font-size: 20px;
+  padding: .5rem;
+}
+
+div.modal {
+  display: none;
+}
+
+div.pass {
+  position: absolute;
+  top: 0;
+  margin: 10rem 0;
+  transform: rotate(90deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.pass textarea {
+  pointer-events: auto;
+}
+
+div.pass div.pass-buttons button {
+  padding: 1rem;
+  border: none;
+  border-radius: .2rem;
+  margin: .5rem;
+  background: rgb(80, 224, 80);
+}
+
+div.pass {
+  display: none;
+}
+
+div.buttons button {
+  border: 2px black solid;
+  padding: 1rem;
+  margin: .5rem;
+}
