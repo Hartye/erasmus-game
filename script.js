@@ -26,6 +26,12 @@ function verifyPass() {
     pass = 6;
   }
 
+  if (pass != 0) {
+    showText(15);
+  } else {
+    showText(16);
+  }
+
   document.querySelector(".pass-textarea").value = "";
 
   document.querySelector(".pass").style.display = "none";
@@ -191,6 +197,19 @@ function showText(n) {
 
   if (n == 14) {
     text = "34% of all the Italians have never used Internet";
+  }
+
+  if (n == 14) {
+    text =
+      "Hello! This is our game.\n To play the game you'll have to read what is written on the images and use the information to pass to another level. Have fun!!";
+  }
+
+  if (n == 15) {
+    text = "Right!!";
+  }
+
+  if (n == 16) {
+    text = "Wrong!!";
   }
 
   document.querySelector(".modal").style.display = "flex";
